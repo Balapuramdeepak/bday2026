@@ -637,7 +637,7 @@ function App() {
             onClick={() => setOpenGift(null)}
           >
             <motion.article
-              className={`gift-modal glass-panel relative w-full max-w-2xl p-7 text-center sm:p-12 ${openGift === 'memories' ? 'memory-modal' : ''}`}
+              className={`gift-modal glass-panel relative w-full max-w-2xl p-7 text-center sm:p-12 ${openGift === 'memories' ? 'memory-modal' : ''} ${openGift === 'letter' ? 'letter-modal' : ''}`}
               initial={{ y: 60, scale: 0.9 }}
               animate={{ y: 0, scale: 1 }}
               exit={{ y: 30, scale: 0.95 }}
@@ -656,13 +656,18 @@ function App() {
                 <>
                   <span className="text-5xl">💌</span>
                   <p className="mt-5 text-xs font-bold uppercase tracking-[0.3em] text-pink-500">A Letter From The Heart ❤️</p>
-                  <h3 className="storybook-title mt-2 text-4xl">Dear Thrisha,</h3>
-                  <div className="mx-auto mt-6 max-w-lg space-y-4 text-left font-serif text-base leading-8 text-slate-600 sm:text-lg">
-                    <p>Happy Birthday to one of the most wonderful people I&apos;ve ever known.</p>
-                    <p>I hope this year brings you endless happiness, countless reasons to smile, and dreams that turn into beautiful memories.</p>
-                    <p>Never stop believing in yourself, because you&apos;re capable of far more than you realize.</p>
-                    <p>May your heart always stay as kind as it is today.</p>
-                    <p className="pt-3 text-right italic text-pink-500">Happy Birthday. ❤️</p>
+                  <h3 className="storybook-title mt-2 text-3xl sm:text-4xl">Dear Thrisha,</h3>
+                  <div className="letter-body mx-auto mt-4 max-w-lg space-y-3 text-left font-serif text-sm leading-7 text-slate-600 sm:text-base sm:leading-8">
+                    <p className="text-center text-base font-semibold text-pink-500 sm:text-lg">Happy Happy Happy Birthday!!!! ❤️🎂</p>
+                    <p>Thank you for your existence.</p>
+                    <p>Ekkada nundi start cheddam ani alochistunna...</p>
+                    <p>Okay, manam ippudu matladukovatledu. Daaniki chala reasons undochu. Kaani mana madhya emaina jarigina, first manam friends... aa taruvathe edaina.</p>
+                    <p>Life lo eppudaina em problem vachina, &quot;idi naa valla kaadu&quot; ani anipisthe... oka message cheyyi. Nenu anni problems solve cheyalekapovachu, but okkadanive face chestunnav ani maatram eppudu anipinchanu.</p>
+                    <p>Day 1 ninnu ela choosano... ippatiki alane choostunna. Time maarochu, situations maarochu, mana conversations kuda taggochu... kaani naa respect, care, and wishes for you eppudu maaravu.</p>
+                    <p>I genuinely hope this year brings you peace, happiness, good health, success, and people who truly value you. Nuvvu deserve chese prati manchi vishayam nee life lo jaragali.</p>
+                    <p>Once again...</p>
+                    <p className="text-right italic text-pink-500">Happy Birthday, Thrisha. ❤️</p>
+                    <p className="text-right italic text-slate-500">Take care... and keep smiling. 🌸</p>
                   </div>
                 </>
               )}

@@ -212,6 +212,20 @@ main > section {
   overflow: hidden;
 }
 
+.letter-modal {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-block: clamp(1rem, 2.5vh, 2rem) !important;
+}
+
+.letter-body {
+  max-height: min(58dvh, 420px);
+  overflow-y: auto;
+  padding-right: .35rem;
+  scrollbar-width: thin;
+}
+
 .memory-modal {
   max-height: calc(100dvh - 2rem);
   overflow: hidden;
