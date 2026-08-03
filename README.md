@@ -1,8 +1,31 @@
-# React + Vite
+# Happy Birthday, Thrisha 🎂
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cute Antarctic birthday experience built with React, Vite, Tailwind CSS, Framer Motion, and canvas-confetti.
 
-Currently, two official plugins are available:
+## Local
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
+
+## Deploy to Vercel (recommended)
+
+1. Create a **new empty public repo** on your personal GitHub:  
+   https://github.com/new  
+   Name suggestion: `thrisha-birthday`
+2. Push this folder:
+
+```bash
+git remote add origin https://github.com/Balapuramdeepak/thrisha-birthday.git
+git branch -M main
+git push -u origin main
+```
+
+3. Go to https://vercel.com → **Add New Project** → Import that repo  
+4. Framework: **Vite** (auto-detected) → Deploy  
+5. Share the live `.vercel.app` link
+
+## Photos
+
+Photos live in `public/photos/`.
