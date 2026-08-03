@@ -223,7 +223,11 @@ main > section {
   max-height: min(58dvh, 420px);
   overflow-y: auto;
   padding-right: .35rem;
-  scrollbar-width: thin;
+  scrollbar-width: none;
+}
+
+.letter-body::-webkit-scrollbar {
+  display: none;
 }
 
 .memory-modal {
@@ -880,4 +884,5 @@ main > section {
     padding-block: .6rem;
   }
 }
+
 
